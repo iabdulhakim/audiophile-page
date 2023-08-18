@@ -385,6 +385,10 @@ body {
   margin-bottom: 3.2rem;
 }
 
+.global__info__title span {
+  color: #D87D4A;
+}
+
 .global__info__desc {
   opacity: 0.5;
 }
