@@ -1,0 +1,84 @@
+.header {
+    background-color: #141414;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+.sitenav-menu {
+    display: none;
+}
+.site-logo-img {
+    width: 143px;
+    height: 25px;
+}
+.sitenav {
+    display: flex;
+    gap: 3.4rem;
+}
+.sitenav-item {
+    color: $white-color;
+    font-family: 'Manrope';
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.92; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.sitenav-item:hover{
+    color: $brown-color;
+    transition: 0.3s;
+}
+
+
+.header-shopping-img {
+    width: 23px;
+    height: 20px;
+}
+.header-line {
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    max-width: 111rem;
+    padding-bottom: 4rem;
+}
+
+// RESPONSIVE
+
+
+@media screen and (max-width:768px){
+    .header-content {
+        justify-content: start;
+    }
+    .sitenav-menu{
+        display: block;
+        margin-right: 4.2rem;
+    }
+    .site-logo{
+        margin-right: auto;
+    }
+    .sitenav{
+        display: none;
+    }
+}
+
+@media screen and (max-width:450px){
+    .container{
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+    }
+    .header-content {
+        justify-content: space-between;
+    }
+    .sitenav-menu{
+        margin-right: 0;
+    }
+    .site-logo{
+        margin-right: 0;
+    }
+}
+

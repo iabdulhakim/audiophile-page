@@ -1,0 +1,231 @@
+
+.hero {
+    background-color: #141414;
+    
+}
+.hero-container {
+    display: flex; 
+    padding-top: 12.8rem;
+    padding-bottom: 15.8rem;
+    background-image: url(../images/hero-image.png);
+    background-repeat: no-repeat;
+    background-position: right 0 top -30px;
+    background-size: contain;
+}
+.hero__content {
+    max-width: 396px;
+    width: 100%;
+}
+.hero__subtitle {
+    opacity: 0.5;
+    color: $white-color;
+    font-family: 'Manrope';
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-bottom: 2.4rem;
+}
+.hero__title {
+    color: $white-color;
+    margin-bottom: 2.4rem;
+    text-transform: uppercase;
+}
+.hero__desc {
+    margin-bottom: 4rem;
+    opacity: 0.75;
+    color: $white-color;
+}
+.hero__link {
+    align-self: start;
+}
+
+@media screen and (max-width:996px) {
+    .hero-container{
+        background-position: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero-content{
+        max-width: 450px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:635px) {
+    .hero-container{
+        background-position: center;
+        background-size: cover;
+    }
+    .hero__subtitle{
+        margin-bottom: 1.6rem;
+    }
+    .hero__title{
+        font-size: 3.6rem;
+    }
+    .hero__desc{
+        margin-bottom: 2.8rem;
+    }
+}
+
+
+
+
+.more-container{
+    margin-top: 20rem;
+}
+.more-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.more-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #F1F1F1;
+    width: 350px;
+    height: 204px;
+}
+.more-item__img {
+    margin-top: -8rem;
+}
+.more-item__title {
+    margin-top: 3.6rem;
+}
+.more-item__link {
+    margin-top: 1.5rem;
+}
+.shop-btn__inner-wrapper {
+    display: flex;
+    align-items: center;
+}
+.shop-btn__text {
+    margin-right: 1.3rem;
+}
+
+
+
+
+// RESPONSIVE
+
+@media screen and (max-width:990px){
+    .hero__image{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+    .hero-content{
+        align-items: center;
+        text-align: center;
+    }
+    .hero__link{
+        align-self: center;
+    }
+}
+@media screen and (max-width:600px){
+    .more-list{
+        display: flex;
+        flex-direction: column;
+        gap: 9rem;
+    }
+    .more-item{
+        max-width: 327px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:450px){
+    .container{
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+    }
+    .hero__title{
+        font-size: 3.8rem;
+    }
+    .hero__subtitle {
+        margin-bottom: 1.6rem;
+    }
+    .hero__desc {
+        margin-bottom: 2.8rem;
+    }
+    
+}
+
+
+// AD SECTION START
+
+
+.ad-container {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+.ad__up {
+    display: flex;
+}
+.ad__img {
+    width: 400px;
+    height: 483px;
+}
+.up-content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.up__title {
+    color: $white-color;
+    margin-bottom: 2.4rem;
+}
+.up__desc {
+    color: $white-color;
+    opacity: 0.75;
+    margin-bottom: 4rem;
+    max-width: 350px;
+}
+.up__btn {
+    text-transform: uppercase;
+    align-self: start;
+    background-color: black;
+    color: $white-color;
+}
+.up__btn:hover {
+    background-color: #4C4C4C;
+    transition: 0.3s;
+}
+.ad__middle {
+    background-image: url(../images/speakerzx7-bg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 320px;
+    border-radius: 8px;
+    padding-top: 10rem;
+    padding-left: 8rem;
+}
+.middle-content{
+    display: flex;
+    flex-direction: column;
+}
+.middle__title {
+    
+}
+.middle__btn {
+    margin-top: 3.2rem;
+    background-color: transparent;
+    border-width: 1.5px;
+    align-self: start;
+}
+.ad__down {
+}
+.down__image {
+}
+.down-content {
+}
+.down__title {
+}
+.down__btn {
+}
